@@ -1,0 +1,129 @@
+
+
+/* From top down */
+
+body{
+  background-color: #233237;
+}
+
+/*Wrapper for input field and results*/
+.inputWrapper{
+  background-color: #984B43;
+  border-radius: 20px;
+  width: 550px;
+  height: 600px;
+  position: relative;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 10%;
+  min-height: 600px;
+  padding-bottom: 3%;
+  display: table;
+  margin-bottom: 5%;
+}
+
+/*User icon*/
+.octicon-person{
+  font-size: 70px;
+}
+
+/*Input field*/
+.input-group{
+  width: 70%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+/*First show header with a single white line*/
+#resultId{
+  width: 70%;
+  height: 50px;
+  background-color: #984B43;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 10%;
+  border-bottom: solid;
+  border-color: white;
+  border-width: 2px;
+}
+
+/* Static result written*/
+.results{
+  margin-top: 7px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+/*Person searched for*/
+.searchResultsMain{
+  width: 70%;
+  margin: auto;
+  margin-top: 3%;
+  color: white;
+  animation-name: fadeInLeft;
+  animation-duration: 0.1s;
+  font-family: 'Lato', sans-serif;
+}
+
+/*Animated results*/
+.searchResults{
+  width: 70%;
+  margin: auto;
+  margin-top: 3%;
+  color: white;
+  animation-name: slideInDown;
+  animation-duration: 0.5s;
+  font-family: 'Lato', sans-serif;
+
+}
+
+/*Grandparent animations with underline and side information*/
+.searchResultsSide{
+  width: 70%;
+  margin: auto;
+  margin-top: 3%;
+  color: white;
+  text-decoration: underline;
+  font-family: 'Lato', sans-serif;
+}
+
+/*Animated header divs*/
+.searchResultsRelatives{
+  width: 70%;
+  height: 50px;
+  background-color: #984B43;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 3%;
+  border-bottom: solid;
+  border-color: white;
+  border-width: 2px;
+  animation-name: slideInDown;
+  animation-duration: 0.5s;
+  font-weight: bold;
+}
+
+/*Modal window and its button*/
+.modalView{
+  font-family: 'Lato', sans-serif;
+  color: #666666;
+}
+
+/*Fix modal position*/
+.modal-backdrop {
+  z-index: -1;
+}
+
+/*Modal button*/
+#modalButton{
+  position:absolute;
+  top:0;
+  right:0;
+  margin-top: 25px;
+  margin-right: 25px;
+}
