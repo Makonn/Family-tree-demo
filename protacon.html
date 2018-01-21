@@ -31,12 +31,18 @@
           <span class="octicon octicon-person" style="font-size: 35px; color: white; margin-top:2px"></span>
         </span>
 
-        <input type="text" id="inputField" class="form-control" placeholder="Name" aria-describedby="basic-addon1 " autofocus>
+        <input type="text" id="inputField" class="form-control" placeholder="Name" aria-describedby="basic-addon1 ">
 
         <span class="input-group-addon" style="margin-left: 10px;">
           <button type="button" id="search" class="btn btn-success"><span class="octicon octicon-arrow-right" style="font-size: 20px; margin-left: 7px"></span></button>
         </span>
 
+      </div>
+
+      <table class="proposals">
+        <ul class="proposalsUl">
+
+        </ul>
       </div>
 
       <!-- Results -->
@@ -45,7 +51,7 @@
     </div>
 
     <!-- Modal button -->
-    <button type="button" id="modalButton" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Info</button>
+    <button type="button" id="modalButton" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><p style="font-style: italic;">i</p></button>
 
     <!-- Modal window -->
     <div class="modal fade" id="myModal" role="dialog">
@@ -58,14 +64,15 @@
 
           <div class="modal-body">
             <p class="modalView">This programm fetches a JSON file containing people with information about their relatives. Program shows all the data available for the person searched for. In optimal situation the program lists parents, grandparents and siblings.</p>
-            <p class="modalView">For example, try to search for "Ukko Virtanen", "Tiia Laakkonen" or with a name you come up with.</p>
+            <p class="modalView">For example, try to search for "Ukko Virtanen", "Tiia Laakkonen" or with a name you come up with. Try also to search for a person in the list to see the filter search in use.</p>
             <p class="modalView">JSON file is build the following way:</p>
+            <p class="modalView">0:</p>
             <p class="modalView">&nbsp&nbspid: 1</p>
             <p class="modalView">&nbsp&nbspfirstName: "Tiia"</p>
             <p class="modalView">&nbsp&nbsplastName: "Laakkonen"</p>
             <p class="modalView">&nbsp&nbspfather: null</p>
             <p class="modalView">&nbsp&nbspmother: null</p>
-            <p class="modalView">See more about the JSON <a href>https://www.protacon.com/ohjelmointitehtava</href></p>
+            <p class="modalView">See more about the JSON <a href = "http://it-hekuma.protacon.fi/family_tree.json" target="_blank">here</href></p>
           </div>
 
           <div class="modal-footer">

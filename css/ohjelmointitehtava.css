@@ -35,6 +35,33 @@ body{
   width: 70%;
   margin: auto;
   margin-top: 10%;
+  margin-bottom: 5px;
+}
+
+.proposalsUl{
+  position: absolute;
+  display: none;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: white;
+  width: 70%;
+  margin-left: 21.5%;
+  max-height: 350px;
+  overflow: auto;
+  font-family: 'Lato', sans-serif;
+}
+
+.proposalResults{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #505050;
+  list-style-type: none;
+}
+
+.proposalResults:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #D8D8D8;
+    cursor: pointer;
 }
 
 /*First show header with a single white line*/
@@ -124,6 +151,7 @@ body{
   position:absolute;
   top:0;
   right:0;
-  margin-top: 25px;
-  margin-right: 25px;
+  height: 50px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
