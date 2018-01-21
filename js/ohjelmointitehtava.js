@@ -120,6 +120,8 @@ function searchForMatch(proposaInput){
 //Search parents
 function parents(i){
 
+  console.log("veijjo");
+
   //If searched person has parents
   if(response[i].father != null || response[i].mother){
 
@@ -151,6 +153,7 @@ function parents(i){
     siblings(fatherIndex, motherIndex, input);
 
   }
+  $( ".inputWrapper" ).append( "<div class=searchResults id=noFurtherResults><p id=noFurtherResults>*No further information about relatives</p></div>" );
 }
 
 //Search grandparents
@@ -235,7 +238,6 @@ function siblings(fatherIndex, motherIndex, input){
       }
       $( ".inputWrapper" ).append( "<div class=searchResults>" + response[i].firstName + " " + response[i].lastName + "</div>" );
     }
-
   });
 
 }

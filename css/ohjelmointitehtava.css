@@ -155,3 +155,7 @@ body{
   margin-top: 10px;
   margin-right: 10px;
 }
+
+#noFurtherResults{
+  text-decoration: underline;
+}
